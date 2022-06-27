@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS CheatSheet</title>
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header and Title -->
+    <header><h1>CSS CheatSheet</h1></header>
+    <!-- Selectors section -->
+    <div class="selectors">
+      <h2>Selectors</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>*</td>
+            <td><strong>*</strong></td>
+            <td>Selects all elements</td>
+          </tr>
+          <tr>
+            <td>element</td>
+            <td><strong>element</strong></td>
+            <td>Selects all &lt;element&gt;</td>
+          </tr>
+          <tr>
+            <td>.class</td>
+            <td><strong>.</strong>classname</td>
+            <td>Selects all elements with class="classname"</td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td><strong>#</strong>idname</td>
+            <td>Selects all elements with the id="idname"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Specificity section -->
+    <div class="specificity">
+      <h2>Specificity</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Specificity</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.class1.class2</td>
+            <td>
+              Selects all elements with both <em>classname1</em> and
+              <em>classname2</em>
+            </td>
+          </tr>
+          <tr>
+            <td>.class1 .class2</td>
+            <td>
+              Selects all elements with <em>class="classname2"</em> that is a
+              descendant of <em>classname1</em>
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;element&gt;, .class1</td>
+            <td>With a comma, it selects both the element and class</td>
+          </tr>
+          <tr>
+            <td>.class1 element</td>
+            <td>Selects the elements that have class1</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Specificity Hierarchy</h3>
+      <p>
+        In order most most specific to least specific, the most specific will be
+        selected first
+      </p>
+      <ol>
+        <li>IDs (#id)</li>
+        <li>Classes (.classname)</li>
+        <li>Element (&lt;element&gt;)</li>
+      </ol>
+    </div>
+    <!-- Pseudo Class Section -->
+    <div class="pseudo">
+      <h2>Pseudo Classes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pseudo Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>element<strong>:hover</strong></td>
+            <td>
+              Activates css whenever the mouse hovers over the specified element
+            </td>
+          </tr>
+          <tr>
+            <td>input<strong>:required</strong></td>
+            <td>Selects inputs that are required</td>
+          </tr>
+          <tr>
+            <td>input<strong>:disabled</strong></td>
+            <td>Selects every disabled specified input</td>
+          </tr>
+          <tr>
+            <td>input<strong>:focus</strong></td>
+            <td>Selects the input element which has focus</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
